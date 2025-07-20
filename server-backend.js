@@ -1,9 +1,3 @@
-Here's the exact content for `server-backend.js` to paste on GitHub:
-
-Read file: backend/server.js
-## **📋 Copy and Paste This Content for `server-backend.js`:**
-
-```javascript
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -12,8 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB (cloud or local)
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://patrick-furnitures-admin:YOUR_ACTUAL_PASSWORD@cluster0.ashifhg.mongodb.net/patrick-furnitures?retryWrites=true&w=majority&appName=Cluster0', {
+// Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/patrick-furnitures', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -78,6 +72,3 @@ const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
   console.log(`Backend server running on port ${PORT}`);
 });
-```
-
-**Copy this entire code block and paste it into the `server-backend.js` file on GitHub!** 🚀
