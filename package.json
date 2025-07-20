@@ -1,0 +1,21 @@
+{
+  "name": "patrick-furnitures",
+  "version": "1.0.0",
+  "description": "Patrick Furnitures - Frontend and Backend",
+  "scripts": {
+    "start": "node server-backend.js",
+    "install": "npm install && npm install --prefix backend",
+    "build": "npm install",
+    "dev": "concurrently \"npm run server\" \"npm start\"",
+    "server": "node server-backend.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
