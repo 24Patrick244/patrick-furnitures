@@ -70,6 +70,10 @@ app.delete('/api/products/:id', async (req, res) => {
 
 // Use the port provided by Render, or 10000 locally
 const PORT = process.env.PORT || 10000;
+console.log('Environment PORT:', process.env.PORT);
+console.log('Using PORT:', PORT);
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Backend server running on port ${PORT}`);
+  console.log(`Server is listening on all interfaces (0.0.0.0)`);
 });
